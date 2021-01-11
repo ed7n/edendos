@@ -1,0 +1,119 @@
+EDEN's DOS Portal: Manual (MANUAL.TXT)
+--------------------------------------
+u3r0 by Brendon, 01/23/2019.
+
+Welcome to EDENdos update 3!
+
+
+Installation
+------------
+1.  Extract EDENdos <version>.zip into a folder of your desire.
+
+...that's it, just remember where you put it.
+
+
+Getting Started
+---------------
+Start by running edendos.bat and read the general warning that follows.
+
+You will be shown a list of scripts available for use, then be brought to the
+EDENdos prompt. It should appear like the following:
+
+    Me@MyPC/EDENdos/_>
+
+Where "Me" is your user name and "MyPC" is your computer name.
+
+Read the on-screen instructions.
+
+Some scripts require administrative privileges to proceed. If you wish to run
+them, ensure that you have such permissions. Run edendos.bat as an administrator
+(File > Run as administrator). You can check whether you done this correctly
+with "adminchk" at the EDENdos prompt. Running RUN.EXE does the same for you.
+
+EDENdos works on a computer running Windows Vista or later, especially Windows
+10, where EDENdos was tested.
+
+Running EDENdos on a computer running Windows XP or older, or using Wine, will
+show something but I am sure that it will break.
+
+
+Optional First-Time Setup
+-------------------------
+automen and autocln optionally use the following third-party programs:
+
+    BleachBit
+    CCleaner
+    Wise Disk Cleaner
+    Wise Registry Cleaner
+
+1.  Download their portable builds using the following links:
+
+    BleachBit Portable:     [ http://www.bleachbit.org/download/windows ]
+    CCleaner Portable:      [ http://www.piriform.com/ccleaner/download/portable/downloadfile ]
+    Wise Registry Cleaner:  [ http://www.wisecleaner.com/soft/WDCFree.zip ]
+    Wise Disk Cleaner:      [ http://wisecleaner.com/soft/WRCFree.zip ]
+
+You should have 4 archives of the following file names:
+
+    BleachBit-<version>-portable.zip
+    ccsetup<version>.zip
+    WDCFree.zip
+    WRCFree.zip
+
+where <version> denotes the program version, may differ over time.
+
+
+2.  Extract each archive, except ccsetup<version>.zip, directly into the edendosd
+    folder.
+
+Create a new folder inside the edendosd folder and rename it to CCleaner.
+
+Extract ccsetup<version>.zip directly into this new folder.
+
+The edendosd folder should now contain the following folders:
+
+    BleachBit-Portable
+    CCleaner
+    Wise Disk Cleaner
+    Wise Registry Cleaner
+
+where each folder should contain program folders and files. The setupchk script
+can verify this for you, run this under EDENdos.
+
+
+3.  For users with OCD, like me, you may want to configure them in the
+    following manner:
+
+    BleachBit (bleachbit.exe):
+
+        Menu > Edit > Preferences >
+            Check "Download and update cleaners from community (winapp2.ini)",
+            then click OK.
+
+        Wait for "winapp2.ini" to be downloaded. Otherwise, restart the app.
+
+        Check all cleaners except for "Free disk space", ignoring all warnings
+        except for ones that state "...can cause issues..." or similar.
+
+
+    CCleaner (CCleaner.exe):
+
+        Check all cleaners except for "Wipe Free Space".
+
+        Options > Advanced >
+            Uncheck "Only delete Windows Temp folders older than 24 hours".
+
+
+    Wise Disk Cleaner (WiseDiskCleaner.exe):
+        Under Common Cleaner, check all cleaners.
+
+
+Endnote
+-------
+Windows is a trademark of Microsoft Corporation.
+CCleaner is a trademark of Piriform Ltd.
+Wise Registry Cleaner and Wise Disk Cleaner are trademarks of WiseCleaner.
+
+
+-----------------
+End of MANUAL.TXT
